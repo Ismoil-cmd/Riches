@@ -30,7 +30,7 @@ header {
     position: relative;
     height: 540px;
     padding: 36px 5%;
-    background: url("{% static 'images/bg.png' %}") center/150% no-repeat;
+    background: url(../images/bg.png) center/150% no-repeat;
 
     & > *:not(.blurBg_header) { position: absolute; }
 
@@ -99,7 +99,7 @@ header {
 
     & > .imgPerson_header {
         width: 70%; height: 100%;
-        background: url("{% static 'images/imgPerson-1.png' %}") top/175%;
+        background: url(../images/imgPerson-1.png) top/175%;
         position: absolute;
         bottom: 0; right: 0;
     }
@@ -194,61 +194,61 @@ section {
         }
 
         & > .img-1 {
-            background-image: url("{% static 'images/Screenshot_20241019-190850_Riches.jpg' %}");
+            background-image: url(../images/Screenshot_20241019-190850_Riches.jpg);
             filter: blur(0em);
             right: 0;
         }
         & > .img-2 {
-            background-image: url("{% static 'images/Screenshot_20241019-190902_Riches.jpg' %}");
+            background-image: url(../images/Screenshot_20241019-190902_Riches.jpg);
             filter: blur(0.03em);
             right: 13%; top: 1%;
             scale: 0.95;
             z-index: -1;
         }
         & > .img-3 {
-            background-image: url("{% static 'images/Screenshot_20241019-190908_Riches.jpg' %}");
+            background-image: url(../images/Screenshot_20241019-190908_Riches.jpg);
             filter: blur(0.05em);
             right: 23%; top: 1%;
             scale: 0.93;
             z-index: -2;
         }
         & > .img-4 {
-            background-image: url("{% static 'images/Screenshot_20241019-190917_Riches.jpg' %}");
+            background-image: url(../images/Screenshot_20241019-190917_Riches.jpg);
             filter: blur(0.07em);
             right: 29%; top: 1%;
             scale: 0.9;
             z-index: -3;
         }
         & > .img-5 {
-            background-image: url("{% static 'images/Screenshot_20241019-190902_Riches.jpg' %}");
+            background-image: url(../images/Screenshot_20241019-190902_Riches.jpg);
             filter: blur(0.085em);
             right: 37%; top: 3%;
             scale: 0.85;
             z-index: -4;
         }
         & > .img-6 {
-            background-image: url("{% static 'images/Screenshot_20241019-190908_Riches.jpg' %}");
+            background-image: url(../images/Screenshot_20241019-190908_Riches.jpg);
             filter: blur(0.1em);
             right: 43%; top: 1%;
             scale: 0.83;
             z-index: -5;
         }
         & > .img-7 {
-            background-image: url("{% static 'images/Screenshot_20241019-190850_Riches.jpg' %}");
+            background-image: url(../images/Screenshot_20241019-190850_Riches.jpg);
             filter: blur(0.13em);
             right: 50%; top: 1%;
             scale: 0.8;
             z-index: -6;
         }
         & > .img-8 {
-            background-image: url("{% static 'images/Screenshot_20241019-190917_Riches.jpg' %}");
+            background-image: url(../images/Screenshot_20241019-190917_Riches.jpg);
             filter: blur(0.15em);
             right: 55%; top: 1%;
             scale: 0.78;
             z-index: -7;
         }
         & > .img-9 {
-            background-image: url("{% static 'images/Screenshot_20241019-190850_Riches.jpg' %}");
+            background-image: url(../images/Screenshot_20241019-190850_Riches.jpg);
             filter: blur(0.19em);
             left: -5%; scale: 0.7;
             z-index: -8;
