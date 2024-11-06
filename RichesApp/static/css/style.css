@@ -1,0 +1,299 @@
+/* @import url(); */
+
+:root {
+    --bg-body: #000;
+    --font-size: 24px;
+    --font-size-larger: 5em;
+    --font-family-logoName: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, label, a {
+    letter-spacing: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* html {} */
+body {
+    background: #171124;
+    font-size: var(--font-size);
+    color: #a3e1e2;
+}
+
+header {
+    position: relative;
+    height: 540px;
+    padding: 36px 5%;
+    background: url(../images/bg.png) center/150% no-repeat;
+
+    & > *:not(.blurBg_header) { position: absolute; }
+
+    & > .blurBg_header {
+        background: #000;
+        opacity: 0.75;
+        position: absolute;
+        left: 0; top: 0;
+        bottom: 0; right: 0;
+    }
+
+    & > .labels_header {
+        width: max-content;
+        text-align: center;
+        position: absolute;
+        /* border: 3px solid #0f0; */
+
+        & > h1 {
+            font-size: var(--font-size-larger);
+            font-family: var(--font-family-logoName);
+            color: #ffefb1;
+        }
+        
+        & > p {
+            color: #a3e1e2;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.1em;
+            letter-spacing: 5px;
+        }
+    }
+
+    & > .buttons_header {
+        width: 90%;
+        bottom: 10%;
+        display: flex;
+        justify-content: space-between;
+        /* align-items: end; */
+
+        & > button {
+            height: max-content;
+            padding: 12px 24px;
+            font-size: 1.5em;
+            border-radius: 1rem;
+            background: #d5b3ff39;
+            color: #d5b3ff;
+            border: 3px solid;
+            
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        
+        & > .btnDemo {
+            margin-top: 5%;
+            animation: btnDemo 1s infinite linear;
+        }
+        
+        & > .btnDownload {
+            padding: 24px 36px;
+            font-size: 3em;
+            border: none;
+            background: #d5b3ff;
+            color: #000;
+        }
+    }
+
+    & > .imgPerson_header {
+        width: 70%; height: 100%;
+        background: url(../images/imgPerson-1.png) top/175%;
+        position: absolute;
+        bottom: 0; right: 0;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid red; */
+    padding: 12px 5%;
+    background: #6b4fa7;
+    
+    & > * {
+        display: flex;
+        gap: 24px;
+    }
+
+    & > .links_nav {
+        /* border: 3px solid red; */
+
+        & > a {
+            color: #ffefb1;
+            text-decoration: none;
+        }
+    }
+
+    & > .socials_nav {
+        /* border: 3px solid red; */
+        color: #ffefb1;
+    }
+}
+
+section {
+    padding: 5%;
+    display: flex;
+    gap: 0 5%;
+
+    & > .labels_section {
+        width: 40%;
+
+        & > * {
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        & > h2 {
+            color: #ffefb1; font-size: 2.5em;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 5%;
+        }
+
+        & > p {
+            color: #ffefb1;
+            font-weight: 100;
+            font-size: 1.15em;
+        }
+
+        & > label {
+            height: 70px;
+            font-size: 0.9em;
+            font-style: italic;
+            font-weight: 100;
+            color: #d5b3ff;
+        }
+    }
+
+    & > div:not(.labels_section) {
+        width: 55%;
+        /* border: #d5b3ff 3px solid; */
+    }
+
+    & > .images_section {
+        height: 465px;
+        position: relative;
+        z-index: 0;
+
+        & > div {
+            background: #000 center no-repeat;
+            background-size: 107%;
+            width: 275px; height: 465px;
+            border: 3px #d5b3ff solid;
+            position: absolute;
+            border-radius: 1rem;
+            transition: all 0.18s linear;
+
+            &:hover {
+                background-size: 110%;
+                transform: scale(101.5%);
+                cursor: pointer;
+                transition: all 0.2s linear;
+            }
+        }
+
+        & > .img-1 {
+            background-image: url(../images/Screenshot_20241019-190850_Riches.jpg);
+            filter: blur(0em);
+            right: 0;
+        }
+        & > .img-2 {
+            background-image: url(../images/Screenshot_20241019-190902_Riches.jpg);
+            filter: blur(0.03em);
+            right: 13%; top: 1%;
+            scale: 0.95;
+            z-index: -1;
+        }
+        & > .img-3 {
+            background-image: url(../images/Screenshot_20241019-190908_Riches.jpg);
+            filter: blur(0.05em);
+            right: 23%; top: 1%;
+            scale: 0.93;
+            z-index: -2;
+        }
+        & > .img-4 {
+            background-image: url(../images/Screenshot_20241019-190917_Riches.jpg);
+            filter: blur(0.07em);
+            right: 29%; top: 1%;
+            scale: 0.9;
+            z-index: -3;
+        }
+        & > .img-5 {
+            background-image: url(../images/Screenshot_20241019-190902_Riches.jpg);
+            filter: blur(0.085em);
+            right: 37%; top: 3%;
+            scale: 0.85;
+            z-index: -4;
+        }
+        & > .img-6 {
+            background-image: url(../images/Screenshot_20241019-190908_Riches.jpg);
+            filter: blur(0.1em);
+            right: 43%; top: 1%;
+            scale: 0.83;
+            z-index: -5;
+        }
+        & > .img-7 {
+            background-image: url(../images/Screenshot_20241019-190850_Riches.jpg);
+            filter: blur(0.13em);
+            right: 50%; top: 1%;
+            scale: 0.8;
+            z-index: -6;
+        }
+        & > .img-8 {
+            background-image: url(../images/Screenshot_20241019-190917_Riches.jpg);
+            filter: blur(0.15em);
+            right: 55%; top: 1%;
+            scale: 0.78;
+            z-index: -7;
+        }
+        & > .img-9 {
+            background-image: url(../images/Screenshot_20241019-190850_Riches.jpg);
+            filter: blur(0.19em);
+            left: -5%; scale: 0.7;
+            z-index: -8;
+        }
+    }
+
+    & > .videoInstruction {
+        height: 350px;
+        border: #d5b3ff 3px solid;
+    }
+}
+
+select {
+    padding: 8px 24px;
+    border: #d5b3ff 3px solid;
+    background: none;
+    color: #d5b3ff;
+    outline: none;
+    border-radius: 1rem;
+
+    & > option {
+        border: #d5b3ff 3px solid;
+        background: #d5b3ff;
+        color: #000;
+        outline: none;
+        border-radius: 10rem;
+    }
+}
+
+.labels_footer {
+    padding: 36px;
+    width: 100%;
+    text-align: center;
+    background: #2d2047;
+    font-size: 0.8em;
+
+    & > h1 {
+        font-size: var(--font-size-larger);
+        font-family: var(--font-family-logoName);
+        color: #ffefb1;
+    }
+    
+    & > p {
+        color: #a3e1e2;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: 5px;
+    }
+}
